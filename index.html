@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07111f">
+<title>DIP AI Trading</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="shell">
+<header><div class="brand"><div class="logo">DIP<span>AI</span></div><div><h1>DIP AI Trading</h1><small>SCREENSHOT ANALYZER</small></div></div><span class="pill">AI VISION</span></header>
+<main>
+<section class="intro"><p class="eyebrow">CHART INTELLIGENCE</p><h2>চার্টের ছবি দিন,<br><em>AI বিশ্লেষণ</em> দেখুন।</h2><p class="sub">স্ক্রিনশট থেকে সম্ভাব্য মার্কেট দিক, BUY / SELL / WAIT এবং ঝুঁকি বুঝুন।</p></section>
+<section class="panel">
+<div class="row"><label for="pair">Currency pair / Asset</label><input id="pair" maxlength="30" placeholder="যেমন: EUR/USD"></div>
+<div class="row"><label>Timeframe</label><div class="seg"><button class="active" data-tf="1m">1 মিনিট</button><button data-tf="5m">5 মিনিট</button></div></div>
+<label class="upload" for="chart"><span class="uploadicon">＋</span><strong>চার্টের স্ক্রিনশট নির্বাচন করুন</strong><small>PNG, JPG বা WEBP · সর্বোচ্চ ৭ MB</small><img id="preview" alt="নির্বাচিত চার্টের preview"></label>
+<input id="chart" type="file" accept="image/png,image/jpeg,image/webp" hidden>
+<button id="analyze" class="primary" disabled>ছবি বিশ্লেষণ করুন <span>→</span></button>
+<div id="status" role="status"></div>
+</section>
+<section id="result" class="panel result" hidden><div class="resulthead"><h3>AI বিশ্লেষণ</h3><span class="pill">SCREENSHOT</span></div><div id="analysis"></div></section>
+<p class="disclaimer">সতর্কতা: এটি কেবল চার্টের ছবিভিত্তিক AI বিশ্লেষণ, নিশ্চিত পূর্বাভাস বা আর্থিক পরামর্শ নয়। বাজার দ্রুত বদলায়। নিজে যাচাই না করে ট্রেড করবেন না। অ্যাপ কোনো ট্রেড execute করে না।</p>
+</main><footer>DIP AI TRADING <span>· MVP 0.1</span></footer>
+</div><script src="/app.js"></script>
+</body></html>
