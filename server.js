@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.post("/api/analyze", async (req, res) => {
   try {
     if (!process.env.OPENAI_API_KEY) {
-      return res.status(503).json({ error: "সার্ভারে API key সেট করা নেই। .env ফাইলে OPENAI_API_KEY যোগ করুন।" });
+      return res.status(503).json({ AQ.Ab8RN6J-2Eb3SMvJcBGfqwcqMQ-n8enK-rzxNTV7XJVzwckFYg  .env ফাইলে OPENAI_API_KEY যোগ করুন।" });
     }
     const { imageData, timeframe, pair } = req.body || {};
     if (!imageData || !/^data:image\/(png|jpeg|webp);base64,/.test(imageData)) {
