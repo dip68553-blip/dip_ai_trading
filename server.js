@@ -7,6 +7,7 @@ import { fileURLToPath } from "node:url";
 dotenv.config();
 const app = express();
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
 app.use(express.json({ limit: "12mb" }));
 app.use(express.static(path.join(__dirname, "public")));
 
